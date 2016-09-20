@@ -1,3 +1,4 @@
+import time
 
 def merge_sort(arr):
 	if (len(arr) > 1):
@@ -36,5 +37,9 @@ def merge_sort(arr):
 arr = [5, 125, 55, 105, 99, 42, 49, 1, 155, 45, 8, 9, 10]
 print "\nUnsorted array:\n" + str(arr)
 print "\n - SORTING (mergeSort) - \n"
+start_time = time.time()
 merge_sort(arr)	
 print "Sorted array:\n" + str(arr) + "\n"
+print("--- %s seconds ---" % (time.time() - start_time))
+
+

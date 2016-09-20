@@ -1,4 +1,5 @@
 import commonFunctions
+import time
 
 def inserion_sort(arr):		
 	for i in range(1, len(arr)):
@@ -15,5 +16,7 @@ def inserion_sort(arr):
 arr = [5, 125, 55, 105, 99, 42, 49, 1, 155, 45, 8, 9, 10]
 print "\nUnsorted array:\n" + str(arr)
 print "\n - SORTING (inserionSort) - \n"
+start_time = time.time()
 inserion_sort(arr)	
 print "Sorted array:\n" + str(arr) + "\n"
+print("--- %s seconds ---" % (time.time() - start_time))
